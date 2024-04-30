@@ -3,7 +3,7 @@ const app = express();
 const task = require('./routes/tasks')
 
 // app.use(express.urlencoded({extended: false}));
-// app.use(express.json());
+app.use(express.json());
 
 app.use('/api/v1/tasks', task);
 
